@@ -2,34 +2,36 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-02 10:38:29
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-02 17:49:07
- * @FilePath: /resume/src/components/about/index.vue
+ * @LastEditTime: 2022-12-07 16:20:47
+ * @FilePath: /resume/src/view/about/index.vue
  * @Description: 关于
 -->
 <template>
-	<div id="about" class="about width">
-		<h2 class="title">关于 我 <span class="title-border"></span></h2>
-		<div class="about_me">
-			<div class="about_me_image" @mousemove="mouseMove" @mouseleave="mouseLeave">
-				<img class="me" src="../../assets/image/about_me.jpg" alt="about_me" />
-				<img class="dot" src="../../assets/image/dot.png" alt="dot" />
-			</div>
-			<div class="about_me_message">
-				<ul class="message_container">
-					<li class="message_item" v-for="item in aboutList" :key="item.id">
-						<span class="label">
-							<i :class="item.icon"></i>
-							{{ item.label }}
-						</span>
-						<span class="symbol">:</span>
-						<span class="value">{{ item.value }}</span>
-					</li>
-				</ul>
-				<div class="readme">
-					<h6 class="readme_title">自我介绍</h6>
-					<p class="readme_content">
-						有较强的分析、组织和解决问题的能力、有快速学习能力和较高承压能力。能迅速的适应各种环境并融合其中，所受到的教育及锻炼使我能够熟练的管理工作，能独立处理日常中出现的问题，每天都会抽出一定时间来学习新的知识技术和巩固旧知识技术
-					</p>
+	<div id="about" class="about">
+		<div class="content width">
+			<h2 class="title">关于 我 <span class="title-border"></span></h2>
+			<div class="about_me">
+				<div class="about_me_image" @mousemove="mouseMove" @mouseleave="mouseLeave">
+					<img class="me" src="../../assets/image/about_me.jpg" alt="about_me" />
+					<img class="dot" src="../../assets/image/dot.png" alt="dot" />
+				</div>
+				<div class="about_me_message">
+					<ul class="message_content">
+						<li class="message_item" v-for="item in aboutList" :key="item.id">
+							<span class="label">
+								<i :class="item.icon"></i>
+								{{ item.label }}
+							</span>
+							<span class="symbol">:</span>
+							<span class="value">{{ item.value }}</span>
+						</li>
+					</ul>
+					<div class="readme">
+						<h6 class="readme_title">自我介绍</h6>
+						<p class="readme_content">
+							有较强的分析、组织和解决问题的能力、有快速学习能力和较高承压能力。能迅速的适应各种环境并融合其中，所受到的教育及锻炼使我能够熟练的管理工作，能独立处理日常中出现的问题，每天都会抽出一定时间来学习新的知识技术和巩固旧知识技术
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -66,6 +68,7 @@ const mouseLeave = () => {
 
 <style lang="less" scoped>
 .about {
+	padding: 100px 0;
 	&_me {
 		display: flex;
 		&_image {
@@ -102,7 +105,7 @@ const mouseLeave = () => {
 		}
 		&_message {
 			margin-left: 10%;
-			.message_container {
+			.message_content {
 				.message_item {
 					display: flex;
 					margin-top: 18px;

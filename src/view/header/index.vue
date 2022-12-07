@@ -2,7 +2,7 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-01 20:05:09
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-06 19:59:04
+ * @LastEditTime: 2022-12-07 16:58:45
  * @FilePath: /resume/src/view/header/index.vue
  * @Description: 导航栏
 -->
@@ -35,8 +35,8 @@ const navbarList: Array<Navbar> = reactive([
 	{ id: 0, name: '首页', href: '#home' },
 	{ id: 1, name: '关于', href: '#about' },
 	{ id: 2, name: '技术', href: '#service' },
-	{ id: 3, name: '作品', href: '#portfolio' },
-	{ id: 4, name: '博客', href: '#blog' }
+	{ id: 3, name: '项目', href: '#project' },
+	{ id: 4, name: '教育', href: '#educate' }
 ])
 </script>
 

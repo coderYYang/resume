@@ -8,7 +8,7 @@
 -->
 <template>
 	<div id="home" class="home">
-		<div class="container width">
+		<div class="content width">
 			<h1 class="name">{{ name }}</h1>
 			<h4 class="position">{{ position }}</h4>
 			<div class="line"></div>
@@ -34,7 +34,7 @@ const position: Ref<string> = ref('前端开发工程师')
 	background-size: 100% 100%;
 	width: 100%;
 	height: 100%;
-	.container {
+	.content {
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);

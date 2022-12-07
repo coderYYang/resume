@@ -2,9 +2,9 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-03 14:07:23
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-03 14:25:17
+ * @LastEditTime: 2022-12-07 16:15:16
  * @FilePath: /resume/src/view/copyright/index.vue
- * @Description: 
+ * @Description: 版权
 -->
 <template>
 	<div class="copyright">

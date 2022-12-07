@@ -2,7 +2,7 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-01 18:02:21
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-07 14:11:14
+ * @LastEditTime: 2022-12-07 17:33:28
  * @FilePath: /resume/src/view/index.vue
  * @Description: index.vue
 -->
@@ -12,16 +12,20 @@
 		<Home />
 		<About />
 		<Service />
+		<Project />
+		<Educate />
 		<Copyright />
 	</div>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref, Ref, onMounted, computed } from 'vue'
+import { reactive, ref, Ref, onMounted, computed, nextTick } from 'vue'
 import Header from './header/index.vue'
 import Home from './home/index.vue'
 import About from './about/index.vue'
 import Service from './service/index.vue'
+import Project from './project/index.vue'
+import Educate from './educate/index.vue'
 import Copyright from './copyright/index.vue'
 
 // 滚动条当前位置
@@ -41,22 +45,23 @@ const activeIndex = computed(() => {
 })
 
 onMounted(() => {
-	// 获取所有元素计算高度
-	const list = Array.from(document.querySelector('.app-content')!?.children).map((item) => Math.ceil(item.clientHeight))
-	let height = 0
-	allHeight.push(height)
-	list.forEach((item) => {
-		height += item - 60
+	nextTick(() => {
+		// 获取所有元素计算高度
+		const list = Array.from(document.querySelector('.app-content')!?.children).map((item) =>
+			Math.ceil(item.clientHeight)
+		)
+		let height = 0
 		allHeight.push(height)
+		list.forEach((item) => {
+			height += item - 60
+			allHeight.push(height)
+		})
 	})
-
-	console.log('allHeight', list)
 
 	// 滚动条事件
 	document.querySelector('#app')?.addEventListener('scroll', (e: Event) => {
 		const { scrollTop } = e.target as HTMLDivElement
 		scrollY.value = scrollTop
-		// navbarFixed.value = scrollTop > 50 ? 'fixed' : ''
 		const styleObj = {
 			backgroundColor: '#fff',
 			boxShadow: '0 6px 20px 0 rgba(48, 54, 77, 0.07)',
@@ -71,13 +76,5 @@ onMounted(() => {
 .app-content {
 	width: 100%;
 	height: 100%;
-}
-.about {
-	width: 1140px;
-	margin: 0 auto;
-	padding: 100px 0;
-	.title {
-		color: #232940;
-	}
 }
 </style>

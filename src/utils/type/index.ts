@@ -2,7 +2,7 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-01 20:12:33
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-07 15:30:14
+ * @LastEditTime: 2022-12-07 17:17:02
  * @FilePath: /resume/src/utils/type/index.ts
  * @Description: 类型
  */
@@ -27,4 +27,20 @@ export interface Service {
   logo: string;
   readme: string;
   readMore: string;
+}
+
+export interface Project {
+  id: number;
+  name: string;
+  url: string;
+  readme: string;
+}
+
+export interface Educate {
+  id: number;
+  logo: string;
+  startTime: string;
+  endTime: string;
+  schoolName: string;
+  schoolReadme: string;
 }
