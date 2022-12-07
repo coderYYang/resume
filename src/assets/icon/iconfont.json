@@ -1,0 +1,65 @@
+{
+  "id": "3804605",
+  "name": "resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "736502",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "5027",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "122163",
+      "name": "笑脸",
+      "font_class": "smiling",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "784212",
+      "name": "版权",
+      "font_class": "banquan",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "5387690",
+      "name": "地图_地球",
+      "font_class": "ditu_diqiu",
+      "unicode": "eb31",
+      "unicode_decimal": 60209
+    },
+    {
+      "icon_id": "5657520",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "11372645",
+      "name": "不感兴趣",
+      "font_class": "buganxingqu",
+      "unicode": "e8ac",
+      "unicode_decimal": 59564
+    },
+    {
+      "icon_id": "15714218",
+      "name": "书",
+      "font_class": "shu",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}
