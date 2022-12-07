@@ -2,7 +2,7 @@
  * @Author: yy 691335336@qq.com
  * @Date: 2022-12-02 15:53:01
  * @LastEditors: yy 691335336@qq.com
- * @LastEditTime: 2022-12-07 15:29:24
+ * @LastEditTime: 2022-12-07 15:48:14
  * @FilePath: /resume/src/view/service/index.vue
  * @Description: 技术栈
 -->
@@ -35,7 +35,10 @@ import { reactive } from 'vue'
 import type { Service } from '@/utils/type'
 import Progress from '@/components/progress/index.vue'
 
+// 高亮技术栈
 const serviceActive: Array<number> = reactive([0, 2, 4])
+
+// 技术栈数组
 const serviceList: Array<Service> = reactive([
 	{
 		id: 0,
